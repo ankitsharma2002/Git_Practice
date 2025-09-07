@@ -106,3 +106,21 @@ git push origin main
 8. **Verify your code is live on GitHub**  
    Go to your GitHub repo and refresh the page.
 ---
+
+### 10. Change remote and push code to remote
+# 1) See current remotes and URLs
+git remote -v
+
+# 2) (Optional) list remote branches
+git fetch --all
+git branch -r
+
+# 3) Replace the old origin URL with the new repo URL
+git remote set-url origin https://github.com/ankitsharma2002/PlayWrightAutomationFramework_Project.git
+
+# 4) Alternative: remove and re-add origin
+git remote remove origin
+git remote add origin https://github.com/ankitsharma2002/PlayWrightAutomationFramework_Project.git
+
+# 5) Verify the change
+git remote -v
