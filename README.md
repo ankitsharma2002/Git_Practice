@@ -107,20 +107,31 @@ git push origin main
    Go to your GitHub repo and refresh the page.
 ---
 
-### 10. Change remote and push code to remote
-# 1) See current remotes and URLs
+## 10. **Change remote and push code to remote**
+See current remotes and URLs
+ ```bash
 git remote -v
+ ```
 
-# 2) (Optional) list remote branches
+(Optional) list remote branches
+ ```bash
 git fetch --all
 git branch -r
+ ```
 
-# 3) Replace the old origin URL with the new repo URL
+Replace the old origin URL with the new repo URL
+
+ ```bash
 git remote set-url origin https://github.com/ankitsharma2002/PlayWrightAutomationFramework_Project.git
+ ```
 
-# 4) Alternative: remove and re-add origin
+Alternative: remove and re-add origin
+ ```bash
 git remote remove origin
 git remote add origin https://github.com/ankitsharma2002/PlayWrightAutomationFramework_Project.git
+ ```
 
-# 5) Verify the change
+Verify the change
+ ```bash
 git remote -v
+ ```
